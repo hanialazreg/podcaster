@@ -1,3 +1,4 @@
+import LeftSidebar from "@/components/LeftSidebar";
 import type { Metadata } from "next";
 
 export default function RootLayout({
@@ -8,9 +9,9 @@ export default function RootLayout({
   return (
     <div>
       <main>
-        <p className="text-white-1">leftsideBar </p>
+        <LeftSidebar />
         {children}
-        <p className="text-white-1">rightsideBar</p>
+        {/* <p className="text-white-1">rightsideBar</p> */}
       </main>
     </div>
   );

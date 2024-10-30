@@ -9,15 +9,17 @@ const Home = () => {
         <h1 className="text-20 font-bold text-white-1">
           Hania Trending Podcaster
         </h1>
-        {podcastData.map(({ id, title, description, imgURL }) => (
-          <PodcastCard
-            key={id}
-            imgURL={imgURL}
-            title={title}
-            description={description}
-            podcastId={id}
-          />
-        ))}
+        <div className="podcast_grid">
+          {podcastData.map(({ id, title, description, imgURL }) => (
+            <PodcastCard
+              key={id}
+              imgURL={imgURL}
+              title={title}
+              description={description}
+              podcastId={id}
+            />
+          ))}
+        </div>
       </section>
     </div>
   );
